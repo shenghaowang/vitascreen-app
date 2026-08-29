@@ -16,6 +16,7 @@ class Answer:
 @dataclass
 class Question:
     text: str
+    feature_name: str
     possible_answers: dict[str, Answer]
 
 
@@ -32,6 +33,7 @@ class Questionnaire:
         questions = [
             Question(
                 text=question["question"],
+                feature_name=question["feature_name"],
                 possible_answers={
                     key: Answer(
                         text=answer["answer"],
@@ -52,6 +54,7 @@ class Questionnaire:
         """Save the user's answers (as recorded via set_response) to a YAML file."""
         data = {
             question.text: {
+                "feature_name": question.feature_name,
                 "answer_key": answer_key,
                 "answer": question.possible_answers[answer_key].text,
                 "answer_value": question.possible_answers[answer_key].value,
@@ -64,3 +67,11 @@ class Questionnaire:
             yaml.dump(
                 data, f, sort_keys=False, allow_unicode=True, default_flow_style=False
             )
+
+    def to_features(self) -> dict[str, int]:
+        """Build a {model feature_name: answer_value} dict from the recorded responses."""
+        return {
+            question.feature_name: question.possible_answers[answer_key].value
+            for question in self.questions
+            if (answer_key := self.responses.get(question.text)) is not None
+        }
