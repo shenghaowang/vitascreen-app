@@ -1,5 +1,6 @@
 questions:
 - question: Have you ever been told by a doctor, nurse, or other health professional that you have high blood pressure?
+  feature_name: HighBP
   possible_answers:
     '0':
       answer: no high BP
@@ -10,6 +11,7 @@ questions:
       color: R
       answer_value: 1
 - question: Have you ever been told by a doctor, nurse, or other health professional that you have high cholesterol?
+  feature_name: HighChol
   possible_answers:
     '0':
       answer: no high cholesterol
@@ -20,6 +22,7 @@ questions:
       color: R
       answer_value: 1
 - question: Have you had your cholesterol checked within the past 5 years?
+  feature_name: CholCheck
   possible_answers:
     '0':
       answer: 'No'
@@ -30,6 +33,7 @@ questions:
       color: G
       answer_value: 1
 - question: What is your Body Mass Index (BMI), calculated from your height and weight?
+  feature_name: BMI
   possible_answers:
     '1':
       answer: Normal (18.5–24.9)
@@ -44,6 +48,7 @@ questions:
       color: R
       answer_value: 3
 - question: Have you smoked at least 100 cigarettes (about 5 packs) in your entire life?
+  feature_name: Smoker
   possible_answers:
     '0':
       answer: 'No'
@@ -54,6 +59,7 @@ questions:
       color: R
       answer_value: 1
 - question: Has a doctor, nurse, or other health professional ever told you that you had a stroke?
+  feature_name: Stroke
   possible_answers:
     '0':
       answer: 'No'
@@ -64,6 +70,7 @@ questions:
       color: R
       answer_value: 1
 - question: Have you ever been told you have coronary heart disease (CHD) or had a heart attack (myocardial infarction)?
+  feature_name: HeartDiseaseorAttack
   possible_answers:
     '0':
       answer: 'No'
@@ -74,6 +81,7 @@ questions:
       color: R
       answer_value: 1
 - question: In the past 30 days, have you done any physical activity or exercise, other than your regular job (e.g. running, walking, gardening)?
+  feature_name: PhysActivity
   possible_answers:
     '0':
       answer: 'No'
@@ -84,6 +92,7 @@ questions:
       color: G
       answer_value: 1
 - question: Do you consume fruit one or more times per day?
+  feature_name: Fruits
   possible_answers:
     '0':
       answer: 'No'
@@ -94,6 +103,7 @@ questions:
       color: G
       answer_value: 1
 - question: Do you consume vegetables one or more times per day?
+  feature_name: Veggies
   possible_answers:
     '0':
       answer: 'No'
@@ -104,6 +114,7 @@ questions:
       color: G
       answer_value: 1
 - question: Are you a heavy drinker (more than 14 alcoholic drinks per week for men, or more than 7 per week for women)?
+  feature_name: HvyAlcoholConsump
   possible_answers:
     '0':
       answer: 'No'
@@ -114,6 +125,7 @@ questions:
       color: R
       answer_value: 1
 - question: Do you have any kind of health care coverage, including health insurance, prepaid plans such as HMOs, or government plans such as Medicare?
+  feature_name: AnyHealthcare
   possible_answers:
     '0':
       answer: 'No'
@@ -124,6 +136,7 @@ questions:
       color: G
       answer_value: 1
 - question: In the past 12 months, was there a time when you needed to see a doctor but could not because of the cost?
+  feature_name: NoDocbcCost
   possible_answers:
     '0':
       answer: 'No'
@@ -134,6 +147,7 @@ questions:
       color: R
       answer_value: 1
 - question: In general, how would you rate your overall health?
+  feature_name: GenHlth
   possible_answers:
     '1':
       answer: Excellent
@@ -148,6 +162,7 @@ questions:
       color: R
       answer_value: 3
 - question: In the past 30 days, for how many days was your mental health (stress, depression, or emotional problems) not good?
+  feature_name: MentHlth
   possible_answers:
     '1':
       answer: Less than 10 days
@@ -162,6 +177,7 @@ questions:
       color: R
       answer_value: 3
 - question: In the past 30 days, for how many days was your physical health (physical illness or injury) not good?
+  feature_name: PhysHlth
   possible_answers:
     '1':
       answer: Less than 10 days
@@ -176,6 +192,7 @@ questions:
       color: R
       answer_value: 3
 - question: Do you have serious difficulty walking or climbing stairs?
+  feature_name: DiffWalk
   possible_answers:
     '0':
       answer: 'No'
@@ -186,6 +203,7 @@ questions:
       color: R
       answer_value: 1
 - question: What is your gender?
+  feature_name: Sex
   possible_answers:
     '0':
       answer: Female
@@ -196,6 +214,7 @@ questions:
       color: B
       answer_value: 1
 - question: Which age category do you belong to?
+  feature_name: Age
   possible_answers:
     '1':
       answer: 1-30
@@ -210,6 +229,7 @@ questions:
       color: R
       answer_value: 3
 - question: What is the highest level of education you have completed?
+  feature_name: Education
   possible_answers:
     '1':
       answer: No education or Grade 1-5
@@ -224,6 +244,7 @@ questions:
       color: G
       answer_value: 3
 - question: What is your annual household income?
+  feature_name: Income
   possible_answers:
     '1':
       answer: Less than 10,000
