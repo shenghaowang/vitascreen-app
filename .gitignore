@@ -219,3 +219,6 @@ __marimo__/
 
 # Model backups
 models/*.bak
+
+# User questionnaire responses
+/data/
