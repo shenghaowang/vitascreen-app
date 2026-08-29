@@ -1,0 +1,19 @@
+[project]
+name = "diabetes-project"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.11"
+dependencies = [
+    "catboost>=1.2.10",
+    "matplotlib>=3.11.0",
+    "numpy>=2.4.6",
+    "pandas>=3.0.3",
+    "pyqt5>=5.15.11",
+    "python-docx>=1.2.0",
+    "streamlit>=1.62.0",
+]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.0",
+]
